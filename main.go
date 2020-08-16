@@ -10,5 +10,6 @@ import (
 )
 
 func main() {
+	// 以阻塞方式启动服务器侦听，通常用于单服务器情况
 	g.Server().Run()
 }

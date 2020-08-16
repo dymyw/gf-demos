@@ -12,5 +12,7 @@ import (
 // 用于应用初始化。
 func init() {
 	s := g.Server()
+
+	// 注册插件，swagger.Swagger 实现了 ghttp.Plugin
 	s.Plugin(&swagger.Swagger{})
 }
